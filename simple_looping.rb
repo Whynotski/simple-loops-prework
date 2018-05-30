@@ -1,4 +1,4 @@
-
+require "pry"
 #1
 def loop_iterator(number_of_times)
   # Code your solution here using the "loop" keyword to puts out the below phrase
@@ -41,11 +41,12 @@ end
 #4 X
 
 def until_iterator(number_of_times)
+  
+  binding.pry
   # code your solution here using the "until" keyword
   # hint: use a counter to tell the until loop when to stop!
   phrase = "Welcome to Flatiron School's Web Development Course!"
   count = 1
-  binding.pry 
   until count == number_of_times
     puts phrase
     count += 1 
